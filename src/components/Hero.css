@@ -31,9 +31,9 @@
   height: 100%;
   background: linear-gradient(
     to bottom,
-    rgba(0, 0, 0, 0.4) 0%,
-    rgba(0, 0, 0, 0.2) 50%,
-    rgba(0, 0, 0, 0.6) 100%
+    rgba(11, 15, 25, 0.6) 0%,
+    rgba(11, 15, 25, 0.3) 50%,
+    rgba(11, 15, 25, 0.9) 100%
   );
 }
 
@@ -67,19 +67,20 @@
   display: inline-flex;
   align-items: center;
   gap: var(--spacing-2);
-  background: var(--color-surface);
-  color: var(--color-primary);
+  background: var(--color-primary);
+  color: #0B0F19;
   padding: var(--spacing-4) var(--spacing-8);
   border-radius: var(--radius-full);
-  font-weight: 600;
+  font-weight: 700;
   font-size: 1.125rem;
   transition: all var(--transition-normal);
+  box-shadow: 0 4px 15px rgba(0, 229, 255, 0.2);
 }
 
 .hero-btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-  background: #f0f0f0;
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-glow);
+  background: var(--color-primary-hover);
 }
 
 @media (min-width: 768px) {

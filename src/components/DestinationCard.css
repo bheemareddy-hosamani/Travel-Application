@@ -5,13 +5,15 @@
   border-radius: var(--radius-lg);
   overflow: hidden;
   box-shadow: var(--shadow-md);
-  transition: all var(--transition-normal);
+  transition: all var(--transition-bounce);
   height: 100%;
+  border: 1px solid var(--color-border);
 }
 
 .destination-card:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--shadow-lg);
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: var(--shadow-glow);
+  border-color: var(--color-primary);
 }
 
 .card-image-wrapper {
@@ -35,7 +37,7 @@
 }
 
 .skeleton {
-  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background: linear-gradient(90deg, #161b22 25%, #21262d 50%, #161b22 75%);
   background-size: 200% 100%;
   animation: shimmer 1.5s infinite;
 }
@@ -87,8 +89,8 @@
 }
 
 .tag {
-  background: var(--color-bg);
-  color: var(--color-text);
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--color-primary);
   font-size: 0.75rem;
   padding: 4px 10px;
   border-radius: var(--radius-full);

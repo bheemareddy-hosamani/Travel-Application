@@ -49,7 +49,7 @@ const LocalWeatherWidget = () => {
               onChange={(e) => setSearchQuery(e.target.value)}
               className="manual-search-input"
             />
-            <button type="submit" className="btn-outline">Search</button>
+            <button type="submit" className="search-submit-btn">Search</button>
           </form>
           
           {error && <p className="location-error">{error}</p>}

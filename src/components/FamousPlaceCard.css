@@ -5,12 +5,13 @@
   overflow: hidden;
   box-shadow: var(--shadow-sm);
   border: 1px solid var(--color-border);
-  transition: transform var(--transition-fast);
+  transition: all var(--transition-bounce);
 }
 
 .place-card:hover {
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-md);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-glow);
+  border-color: var(--color-primary);
 }
 
 .place-image-wrapper {
