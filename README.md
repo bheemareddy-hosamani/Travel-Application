@@ -88,7 +88,6 @@ The `useLocation` custom hook wraps the browser's Geolocation API. If the user g
 
 ## Screenshots
 
-![Home Page Placeholder](./screenshots/home.png)
-![Explore Page Placeholder](./screenshots/explore.png)
-![Destination Details Placeholder](./screenshots/details.png)
-![AI Itinerary Placeholder](./screenshots/itinerary.png)
+![Home Page](./screenshots/home.png)
+![Explore Page](./screenshots/explore.png)
+![Destination Details](./screenshots/details.png)
