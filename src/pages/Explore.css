@@ -1,0 +1,120 @@
+.explore-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.explore-main {
+  flex-grow: 1;
+  padding-top: 80px; /* offset for navbar */
+}
+
+.explore-header {
+  background: var(--color-surface);
+  padding: var(--spacing-8) 0;
+  border-bottom: 1px solid var(--color-border);
+  margin-bottom: var(--spacing-8);
+}
+
+.explore-title {
+  font-size: 2.5rem;
+  margin-bottom: var(--spacing-2);
+}
+
+.explore-subtitle {
+  color: var(--color-text-light);
+  margin-bottom: var(--spacing-8);
+  font-size: 1.125rem;
+}
+
+.explore-controls {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-6);
+}
+
+.search-bar {
+  position: relative;
+  max-width: 600px;
+}
+
+.search-icon {
+  position: absolute;
+  left: var(--spacing-4);
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--color-text-light);
+}
+
+.search-input {
+  width: 100%;
+  padding: var(--spacing-3) var(--spacing-4) var(--spacing-3) var(--spacing-12);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-full);
+  font-size: 1rem;
+  font-family: var(--font-sans);
+  outline: none;
+  transition: border-color var(--transition-fast);
+}
+
+.search-input:focus {
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.filter-bar {
+  display: flex;
+  gap: var(--spacing-2);
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  padding: var(--spacing-2) var(--spacing-4);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-full);
+  background: var(--color-surface);
+  color: var(--color-text);
+  font-size: 0.875rem;
+  transition: all var(--transition-fast);
+}
+
+.filter-btn:hover {
+  background: var(--color-bg);
+}
+
+.filter-btn.active {
+  background: var(--color-primary);
+  color: white;
+  border-color: var(--color-primary);
+}
+
+.explore-results {
+  padding-bottom: var(--spacing-12);
+}
+
+.empty-state {
+  text-align: center;
+  padding: var(--spacing-16) 0;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.empty-icon {
+  color: var(--color-text-light);
+  margin-bottom: var(--spacing-4);
+  opacity: 0.5;
+}
+
+.empty-state h3 {
+  font-size: 1.5rem;
+  margin-bottom: var(--spacing-2);
+}
+
+.empty-state p {
+  color: var(--color-text-light);
+  margin-bottom: var(--spacing-6);
+}
+
+.mt-4 {
+  margin-top: var(--spacing-4);
+}
